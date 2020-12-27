@@ -1,13 +1,9 @@
-* {
-    overflow: auto;
-}*
-
 body {
     background-color: #8BA1BB;
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:2%;
+    margin-right:2%;
 }
 
 p.categorie{
@@ -24,12 +20,8 @@ p.categorie{
 
 div.contenu{
     background-color: white;
-    margin: 60px auto 60px;
-    min-width:360px;
-    max-width: 80%;
-    padding-left:30px;
-    padding-right:30px;
-    padding-bottom:30px;
+    margin: 20px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
     box-shadow: 0 1px 3px 0px black, 0 3px 10px 0 black;
 }
 
@@ -43,24 +35,22 @@ h1{
 p.description{
     text-align: center;
     max-width: 400px;
-    /*font-style: italic;*/
     font-size: 16px;
-    /*background-color: thistle;*/
     display:inline-block;
 }
 
 .centre{
     text-align: center;
     width: 100%;
-    /*background-color: rgb(97, 14, 97);*/
 }
 
 div.categorie{
-    text-align:center;
-    margin-top:-10px;
-    margin-bottom:0px;
-    overflow:visible;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    overflow: visible;
 }
+
 div.separateur{
     background-color: black;
     width: 100px;
@@ -68,9 +58,10 @@ div.separateur{
     margin-left: auto;
     margin-right: auto;
 }
+
 img.image_layout{
     display: block; 
-    max-height: 400px;
+    max-height: 300px;
     shape-image-threshold: 300px;
     object-fit: cover;
     zoom: 1.5;
@@ -81,27 +72,25 @@ img.image_layout{
 table.details{
     position:absolute;
     width: 100%;
-    font-size: 13px;
-    height:80px;
+    font-size: 10px;
+    height:50px;
     color: white;
     bottom: 0;
     background-color: #6C829DC0;
 }
 table.details th{
     text-align: center;
-    padding-top: 10px;
-    font-size: 13px;
+    padding-top: 5px;
+    font-size: 10px;
 }
 table.details td{
     text-align: center;
-    padding-bottom: 10px;
-    font-size: 13px;
+    padding-bottom: 5px;
+    font-size: 10px;
 }
 
 div.colonne{
-    width: 45%;
-    margin-top: 20px;
-    overflow: auto;
+    width: 100%;
 }
 
 div.colonne h2{
@@ -115,9 +104,8 @@ div.colonne h2{
 
 div.colonne_ingredients{
     display: inline-block;
-    margin-bottom: 30px;
-
 }
+
 div.colonne_ingredients p{
     border: 1px solid lightgray;
     font-size: 12px;
@@ -125,9 +113,6 @@ div.colonne_ingredients p{
     margin: 3px;
     padding: 5px;
     display: block;
-}
-div.colonne_preparation{
-    float: right;
 }
 
 table.table_preparation p.numero{
@@ -158,4 +143,82 @@ table.table_preparation tr{
 table.table_preparation{
     vertical-align:top;
     font-size: 12px;
+}
+
+* {
+    overflow: auto;
+}
+
+@media only screen and (min-width: 748px) {
+    
+    body {
+        background-color: #8BA1BB;
+        font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    div.contenu{
+        background-color: white;
+        margin: 60px auto 60px auto;
+        min-width:360px;
+        max-width: 80%;
+        padding-left:30px;
+        padding-right:30px;
+        padding-bottom:30px;
+        box-shadow: 0 1px 3px 0px black, 0 3px 10px 0 black;
+    }
+
+    img.image_layout{
+        display: block; 
+        max-height: 400px;
+        shape-image-threshold: 300px;
+        object-fit: cover;
+        zoom: 1.5;
+        min-height: 200px;
+        background-color: lightgray;
+    }
+
+    table.details{
+        position:absolute;
+        width: 100%;
+        font-size: 13px;
+        height:80px;
+        color: white;
+        bottom: 0;
+        background-color: #6C829DC0;
+    }
+    table.details th{
+        text-align: center;
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    table.details td{
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+
+    div.colonne_preparation{
+        float: right;
+    }
+
+    div.colonne{
+        width: 45%;
+        margin-top: 20px;
+        overflow: auto;
+    }
+
+    div.colonne_ingredients{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu{
+        width: 705px;
+    }
 }
